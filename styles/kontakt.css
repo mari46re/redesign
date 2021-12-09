@@ -1,0 +1,70 @@
+body {
+  background-color: #ffffff;
+}
+
+#aabningstider {
+  display: flex;
+  place-content: center;
+}
+
+#aabningstider p {
+  color: #024a1d;
+  margin: 0%;
+}
+
+#aabningstiderh2 {
+  color: #024a1d;
+  font-family: tenso, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.2rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  place-content: center;
+}
+
+#kontakt {
+  background-color: #fdd0c3;
+}
+/* form {
+  display: grid;
+  grid-column: 1 / 1;
+  gap: 10px;
+} */
+
+#kort_hen_til_kaffen {
+  width: 100%;
+  height: 300px;
+  flex: 50%;
+}
+
+#kort_hen_til_kaffen iframe {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin: 0.2rem;
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: #024a1d;
+}
+
+#nyhedsbrevh2 {
+  color: #024a1d;
+  font-family: tenso, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.2rem;
+}
