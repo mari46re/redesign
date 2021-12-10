@@ -20,7 +20,7 @@ body {
   color: #024a1d;
   font-family: tenso, sans-serif;
   font-weight: 500;
-  font-style: medium;
+  /* font-style: medium; */
   font-size: 2.2rem;
   margin: 1rem;
   padding: 0.5rem;
@@ -31,11 +31,6 @@ body {
 #kontakt {
   background-color: #fdd0c3;
 }
-/* form {
-  display: grid;
-  grid-column: 1 / 1;
-  gap: 10px;
-} */
 
 #kort_hen_til_kaffen {
   width: 100%;
@@ -57,12 +52,26 @@ label,
 input,
 button {
   display: block;
-  margin: 0.2rem;
+  margin: 0.4rem 0px;
   font-family: mr-eaves-modern, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.3rem;
   color: #024a1d;
+  border-radius: 7px;
+  box-shadow: 0%;
+  border-color: #024a1d;
+  width: 15rem;
+}
+
+form {
+  display: flex;
+  place-content: center;
+}
+
+#indsendknap {
+  display: flex;
+  place-content: center;
 }
 
 #nyhedsbrevh2 {
@@ -71,8 +80,10 @@ button {
   font-weight: 500;
   font-style: normal;
   font-size: 2.2rem;
+  margin: 2rem;
 }
 
-input {
-  border-radius: 7px;
+#nyhedsbrev p {
+  color: #024a1d;
+  margin: 2rem;
 }

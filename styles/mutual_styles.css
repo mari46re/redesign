@@ -13,15 +13,17 @@ h1 {
   font-size: 3rem;
   margin: 1rem;
   padding: 0.5rem;
+  color: #024a1d;
 }
 
 h2 {
   font-family: tenso, sans-serif;
   font-weight: 700;
-  font-style: normal;
+  font-style: medium;
   font-size: 2.2rem;
   margin: 1rem;
   padding: 0.5rem;
+  color: #024a1d;
 }
 
 h3 {
@@ -31,6 +33,7 @@ h3 {
   font-size: 1.5rem;
   margin: 1rem;
   padding: 0.5rem;
+  color: #024a1d;
 }
 
 p {
@@ -40,6 +43,7 @@ p {
   font-size: 1.3rem;
   margin: 1rem;
   padding: 0.5rem;
+  color: #024a1d;
 }
 
 img {
@@ -54,4 +58,8 @@ a {
   margin: 1rem;
   padding: 0.5rem;
   color: #024a1d;
+  cursor: pointer;
+}
+a:hover {
+  color: #fc7f00;
 }
