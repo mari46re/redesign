@@ -1,7 +1,9 @@
 /* Her er det defineret de forskellige fonte */
+
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -42,4 +44,14 @@ p {
 
 img {
   width: 100%;
+}
+
+a {
+  font-family: tenso, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: #024a1d;
 }
