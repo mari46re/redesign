@@ -1,3 +1,73 @@
+#art_second {
+  background-color: #fc7f00;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+@media (min-width: 720px) {
+  #art_first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  #art_first img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #art_first .art_text1 {
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #art_second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90vh;
+    background-color: chocolate;
+  }
+
+  #art_second img {
+    order: +1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #art_third {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10rem;
+  }
+
+  #art_gallery {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .img_art1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+}
+
+/* ------------ FOOTER START CSS ------------- */
 footer {
   background-color: #fdd0c3;
   text-align: center;
@@ -19,6 +89,7 @@ footer h3 {
   margin: 0%;
   padding: 0%;
   font-size: 1.3rem;
+  color: black;
 }
 
 .kontakt_foot,
@@ -65,3 +136,5 @@ footer h3 {
     margin-right: 2.5rem;
   }
 }
+
+/* ------------ FOOTER SLUT CSS ------------- */
