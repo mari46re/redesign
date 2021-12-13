@@ -39,12 +39,14 @@ body {
   #kort_hen_til_kaffen {
     width: 100%;
     height: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 3rem;
   }
   #kort_hen_til_kaffen iframe {
     width: 100%;
-    height: 100%;
+    /* height: 100vh; */
+    grid-row: 100vh;
   }
   iframe {
     margin: 2rem;
