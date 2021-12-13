@@ -40,6 +40,10 @@
     padding-top: 9rem;
   }
 
+  #art_second .art_text2 p {
+    color: white;
+  }
+
   #art_second img {
     order: +1;
     object-fit: cover;
