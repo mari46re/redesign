@@ -176,6 +176,8 @@ ul.white {
 
 #menu_section {
   background-color: #f8d247;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 #menu_section h2,
@@ -212,6 +214,7 @@ h3 {
   margin-right: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   display: flex;
   justify-content: space-between;
