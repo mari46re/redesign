@@ -60,19 +60,31 @@
             loading="lazy"
           ></iframe>
         </div>
-        <p>her skal der være et kort</p>
+        <div id="find_os_box">
+          <h2 id="kontakt_h2">Find os</h2>
+          <p>
+            Vi befinder os på den skønne Holmbladsgade, og ligge nedlangs
+            Woltersgade. Vi er en en central Cafe som du kan benytte på du er på
+            vej til arbejde eller på vejen hjem fra en dejlig gå tur.
+          </p>
+        </div>
       </section>
 
       <section id="nyhedsbrev">
-        <h2 id="nyhedsbrevh2">Nyhedsbrev</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-          tempore voluptas autem at distinctio officia nobis <br />
-          aliquam odit dolorum animi, quos, necessitatibus <br />
-          reprehenderit iusto sed enim delectus earum dolore incidunt!
-        </p>
+        <div id="send_et_nyhedsbrev">
+          <h2 id="nyhedsbrevh2">Nyhedsbrev</h2>
+          </div>
+          <div id="navn_og_mail">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+            tempore voluptas autem at distinctio officia nobis <br />
+            aliquam odit dolorum animi, quos, necessitatibus <br />
+            reprehenderit iusto sed enim delectus earum dolore incidunt!
+          </p>
+          </div>
+        
 
-        <form>
+        <form action="Tak.html" name="kontakt" netlify>
           <div>
             <label for="name">Navn</label>
             <input
@@ -80,6 +92,7 @@
               id="name"
               name="name"
               type="text"
+              required
             />
           </div>
         </form>
@@ -91,6 +104,7 @@
               id="email"
               name="email"
               type="email"
+              required
             />
           </div>
         </form>
@@ -99,7 +113,33 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="kontakt_foot">
+        <h3>Kontakt</h3>
+        <p>+45 3051 4041</p>
+        <p>voreskaffebar@gmail.com</p>
+      </div>
+      <div class="findos_foot">
+        <h3>Find os</h3>
+        <p>
+          Holmbladsgade 50, <br />
+          2300 København S.
+        </p>
+      </div>
+      <div class="aaben_foot">
+        <h3>Åbningstider</h3>
+        <p>Mandag - Fredag 7-18</p>
+        <p>Lørdag - Søndag 9-18</p>
+      </div>
+      <div class="icon_foot">
+        <a href="https://www.instagram.com/voreskaffebar/"
+          ><img src="/images/ig_icon.svg" alt=""
+        /></a>
+        <a href="https://www.facebook.com/voreskaffebar"
+          ><img src="/images/fb_icon.svg" alt=""
+        /></a>
+      </div>
+    </footer>
   </body>
   <script src="javascript/login.js"></script>
 </html>
