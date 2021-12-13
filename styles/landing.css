@@ -62,26 +62,18 @@ ul.white {
   display: none;
 }
 
-a {
-  color: #024a1d;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover {
-  color: #fc7f00;
-}
-
 @media (min-width: 720px) {
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 0;
     padding: 1rem;
   }
 
   header nav {
     grid-column: 2;
+    display: flex;
+    place-content: flex-end;
   }
 
   header nav ul {
@@ -89,9 +81,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     place-content: flex-end;
-    flex-wrap: nowrap;
-    /* gap: 3rem; */
-    padding: 2rem;
+    flex-flow: wrap;
     position: fixed;
     /* display: inline-block; */
   }
@@ -124,7 +114,7 @@ a:hover {
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
   }
 
   #splash_section .section_wrapper h1 {
@@ -156,7 +146,7 @@ a:hover {
     margin: 1rem;
     grid-column: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
   #menu_section .section_wrapper p {
@@ -185,7 +175,7 @@ a:hover {
 }
 
 #menu_section {
-  background-color: rgb(241, 241, 155);
+  background-color: #f8d247;
 }
 
 #menu_section h2,
@@ -196,10 +186,16 @@ a:hover {
 
 #menu_section.section_wrapper,
 h2 {
+  margin: 0;
   margin-bottom: 1rem;
   margin-top: 0;
 }
-
+#menu_section.section_wrapper,
+h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
 .splash {
   height: auto;
   aspect-ratio: 16/9;
@@ -214,6 +210,8 @@ h2 {
   margin: 0;
   margin-left: 2rem;
   margin-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1rem;
   display: flex;
   justify-content: space-between;
@@ -223,4 +221,8 @@ h2 {
 #splash_section .section_wrapper p {
   margin-left: 1rem;
   padding: 0;
+}
+
+a {
+  margin: 1rem;
 }
