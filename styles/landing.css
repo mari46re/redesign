@@ -6,17 +6,17 @@
 /*-----------NAVIGATION------------*/
 .burger_container {
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  justify-content: flex-end; */
 }
-button {
+/* button {
   padding-top: 2rem;
   padding-right: 2rem;
-}
+} */
 
 .burger {
-  display: block;
-
+  padding-top: 2rem;
+  padding-right: 2rem;
   /*gennemsigtig baggrund uden kant*/
   background: transparent;
   border: none;
@@ -26,6 +26,10 @@ button {
 
   /*musen bliver til en pegefinger når man kører den over ikonet*/
   cursor: pointer;
+
+  z-index: 1;
+
+  position: fixed;
 }
 
 /*------Kode der bruges i javascript------*/
@@ -33,57 +37,76 @@ button {
   opacity: 0;
 }
 
-nav {
+/* nav {
   display: none;
-}
-
-nav.shown {
-  display: flex;
-  justify-content: right;
-}
+} */
 
 /*--------------------------------------------*/
 
-header nav ul {
-  position: sticky;
-  list-style: none;
-  padding: 1rem;
-}
-
-li {
-  padding: 1rem;
-}
-.burger_container.white,
-ul.white {
-  background-color: white;
-}
-
-.logo {
-  display: none;
-}
-
-@media (min-width: 720px) {
-  header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0;
+@media (max-width: 720px) {
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    transition: 0.4s;
+    transform: translateX(100%);
+  }
+  nav.shown {
+    transform: none;
+  }
+  header nav ul {
+    position: sticky;
+    list-style: none;
     padding: 1rem;
   }
 
-  header nav {
-    grid-column: 2;
+  li {
+    padding: 1rem;
+  }
+  /* .burger_container.white, */
+  ul.white {
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger_container {
     display: flex;
-    place-content: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  display: block;
+}
+
+@media (min-width: 720px) {
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2;
+    padding: 1rem;
+    margin: 1rem;
   }
 
   header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    place-content: flex-end;
     flex-flow: wrap;
     position: fixed;
-    /* display: inline-block; */
+    gap: 3rem;
   }
 
   .burger {
@@ -94,8 +117,8 @@ ul.white {
     display: block;
     grid-column: 1;
     aspect-ratio: 350/150;
-    width: 10%;
-    padding-top: 1rem;
+    width: 14%;
+    padding-top: 2rem;
     position: fixed;
   }
 
@@ -224,6 +247,10 @@ h3 {
 #splash_section .section_wrapper p {
   margin-left: 1rem;
   padding: 0;
+}
+
+#splash_section .section_wrapper h1 {
+  margin-right: 2rem;
 }
 
 a {
