@@ -7,6 +7,8 @@ const ul = document.querySelector("ul");
 
 const bknap = document.querySelector(".burger_container");
 
+// const logo = document.querySelector(".logo2");
+
 // Lav en function, der hedder toggleMenu()
 function toggleBurger() {
   // 1. Toggle en klasse på nav vha. classList.toggle
