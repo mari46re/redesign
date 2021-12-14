@@ -19,8 +19,8 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 3rem;
-  margin: 1rem;
-  padding: 0.5rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
   color: #024a1d;
 }
 
@@ -29,8 +29,8 @@ h2 {
   font-weight: 700;
   font-style: medium;
   font-size: 2.2rem;
-  margin: 1rem;
-  padding: 0.5rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
   color: #024a1d;
 }
 
@@ -39,8 +39,8 @@ h3 {
   font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
-  margin: 1rem;
-  padding: 0.5rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
   color: #024a1d;
 }
 
@@ -49,8 +49,8 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 1.3rem;
-  margin: 1rem;
-  padding: 0.5rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
   color: #024a1d;
 }
 
@@ -72,3 +72,79 @@ a {
 a:hover {
   color: #fc7f00;
 }
+
+/* ------------------- FOOTER START HER CSS ------------------ */
+footer {
+  background-color: #fdd0c3;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer p {
+  color: #024a1d;
+  margin: 0%;
+  padding: 0%;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  margin: 0%;
+  padding: 0%;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.kontakt_foot,
+.findos_foot,
+.aaben_foot {
+  margin-bottom: 2.5rem;
+}
+
+.icon_foot {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .icon_foot .img_icon1 {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+footer .icon_foot .img_icon2 {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+@media (min-width: 720px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+    text-align: left;
+    place-items: left;
+    padding-top: 3rem;
+    padding-left: 5rem;
+  }
+  footer a {
+    margin: 0%;
+    margin-left: 2rem;
+    padding: 0%;
+  }
+
+  footer .icon_foot {
+    grid-column: 6/7;
+  }
+
+  .kontakt_foot,
+  .findos_foot,
+  .aaben_foot {
+    margin-right: 2.5rem;
+  }
+}
+
+/* ------------------- FOOTER SLUT CSS -------------------- */

@@ -85,7 +85,7 @@ body {
 
 /* Her er koden for kortet */
 #kontakt {
-  background-color: #fc7f00;
+  background-color: #fdd0c3;
   margin-top: 2rem;
 }
 
@@ -104,7 +104,7 @@ iframe {
 }
 
 #kontakt_h2 {
-  color: #ffffff;
+  color: #024a1d;
   font-family: tenso, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -115,7 +115,7 @@ iframe {
 #kontakt p {
   margin-top: 0rem;
   padding: 1rem;
-  color: #ffffff;
+  color: #024a1d;
 }
 /* Her slutter koden for kortet */
 
@@ -159,73 +159,3 @@ form {
   color: #024a1d;
   margin: 2rem;
 }
-
-/* Her er det som Tania har lavet til footeren */
-footer {
-  background-color: #fdd0c3;
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-footer p {
-  color: #024a1d;
-  margin: 0%;
-  padding: 0%;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  margin-top: 0.3rem;
-}
-
-footer h3 {
-  text-transform: uppercase;
-  margin: 0%;
-  padding: 0%;
-  font-size: 1.3rem;
-}
-
-.kontakt_foot,
-.findos_foot,
-.aaben_foot {
-  margin-bottom: 2.5rem;
-}
-
-.icon_foot {
-  display: flex;
-  justify-content: center;
-}
-.icon_foot img {
-  width: 100%;
-}
-
-@media (min-width: 720px) {
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 2rem;
-    text-align: left;
-    place-items: left;
-    padding-top: 3rem;
-    padding-left: 5rem;
-  }
-  footer a {
-    margin: 0%;
-    margin-left: 2rem;
-    padding: 0%;
-  }
-
-  footer .icon_foot {
-    grid-column: 6/7;
-  }
-
-  footer img {
-    width: 100%;
-    flex-shrink: 0;
-  }
-  .kontakt_foot,
-  .findos_foot,
-  .aaben_foot {
-    margin-right: 2.5rem;
-  }
-}
-/* her slutter tanias footer, men logoerne bliver små når der bliver zoomet ind */
