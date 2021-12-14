@@ -119,23 +119,27 @@
 
 /* ------------------- TO TOP BUTTON ------------------ */
 
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-image: url(/images/btn_front_front.svg);
-  padding: 15px; /* Some padding */
-  font-size: 18px; /* Increase font size */
-  width: 58px;
-  height: 30px;
+.front_btn {
+  position: fixed;
+  top: 81.5%;
+  left: 91.9%;
 }
 
-#myBtn:hover {
-  background-image: url(/images/btn_back_back.svg);
+#btn .front_btn img {
+  width: 3.5rem;
+}
+#btn img {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.43);
+  border-radius: 190px;
+}
+
+.front_btn:hover {
+  background-image: url(/images/btn_back.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.front_btn:hover img {
+  opacity: 0%;
 }
 
 /* ------------------- TO TOP BUTTON SLUT ------------------ */

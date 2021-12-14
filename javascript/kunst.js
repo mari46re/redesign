@@ -1,5 +1,5 @@
 //Const til knap
-mybutton = document.getElementById("myBtn");
+mybutton = document.getElementById("btn");
 
 // Når man scroller ned til 20px, fra toppen, dukker knap frem
 window.onscroll = function () {
@@ -17,5 +17,5 @@ function scrollFunction() {
 // når man klikker på knappen kommer man op til toppen
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
