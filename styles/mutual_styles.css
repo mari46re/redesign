@@ -1,4 +1,12 @@
-/* Her er det defineret de forskellige fonte */
+/* *Her er det defineret de forskellige fonte */
+/* !Her er det defineret de forskellige fonte */
+/* ^Her er det defineret de forskellige fonte */
+/* ?Her er det defineret de forskellige fonte */
+/* ~Her er det defineret de forskellige fonte */
+/* TODOHer er det defineret de forskellige fonte */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0%;
@@ -47,7 +55,7 @@ p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 a {

@@ -35,22 +35,29 @@ body {
   }
   #kontakt {
     display: flex;
+    height: 100%;
+    width: 100%;
   }
   #kort_hen_til_kaffen {
     width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 3rem;
+    height: 100%;
+    /* display: grid; */
+    /* /* grid-template-columns: 1fr 1fr; */
+    padding: 1rem;
+    flex: 50%;
   }
-  #kort_hen_til_kaffen iframe {
-    width: 100%;
-    /* height: 100vh; */
-    grid-row: 100vh;
-  }
+  /* #kort_hen_til_kaffen,
   iframe {
-    margin: 2rem;
-    padding: 2rem;
+    width: 800%;
+    height: auto;
+    align-items: stretch;
+  } */
+
+  #find_os_box {
+    padding: 6rem;
+    flex: 50%;
+    width: 100%;
+    height: 100%;
   }
 
   #nyhedsbrev {
@@ -78,28 +85,26 @@ body {
 
 /* Her er koden for kortet */
 #kontakt {
-  background-color: #fdd0c3;
+  background-color: #fc7f00;
   margin-top: 2rem;
 }
 
 #kort_hen_til_kaffen {
   width: 100%;
-  height: 380px;
-  display: flex;
 }
 
 #kort_hen_til_kaffen iframe {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 1;
 }
 
 iframe {
-  margin: 1rem;
   padding: 1rem;
 }
 
 #kontakt_h2 {
-  color: #024a1d;
+  color: #ffffff;
   font-family: tenso, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -110,6 +115,7 @@ iframe {
 #kontakt p {
   margin-top: 0rem;
   padding: 1rem;
+  color: #ffffff;
 }
 /* Her slutter koden for kortet */
 
