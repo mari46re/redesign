@@ -9,14 +9,54 @@
     <link rel="stylesheet" href="styles/kunst.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bmh3hjq.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bmh3hjq.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Vores Kaffebar</title>
   </head>
+
   <body>
     <header>
+      <!-- logo kommer snart -->
+      <!-- <div class="splash"> -->
+      <!-- <div class="indhold"> -->
+      <div class="logo">
+        <a href="landing.html"><img src="logo.svg" alt="logo" /></a>
+      </div>
+      <!-- Knapper til burger-menuen -->
+      <div class="burger_container">
+        <button class="burger">
+          <img src="burger.svg" alt="burger" />
+        </button>
+      </div>
       <nav>
         <ul>
           <li>
-            <a href="landing.html#section_menu">MENU</a>
+            <a href="landing.html#menu_section">MENU</a>
           </li>
           <li><a href="omos.html">OM OS</a></li>
           <li><a href="kunst.html">KUNST</a></li>
@@ -25,16 +65,16 @@
       </nav>
     </header>
     <main>
-      <div onclick="topFunction()" id="btn">
+      <button onclick="topFunction()" id="btn" style="display: none">
         <div class="front_btn">
           <img src="/images/btn_front.svg" alt="" />
         </div>
-      </div>
+      </button>
 
       <section id="art_first">
         <img src="images/art_first8.png" alt="" />
 
-        <div class="art_text1">
+        <div class="art_text1 horizontal-padding vertical-padding">
           <h2>Kunst</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,7 +90,7 @@
       <section id="art_second">
         <img src="/images/inside4.png" alt="" />
 
-        <div class="art_text2">
+        <div class="art_text2 horizontal-padding vertical-padding">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -62,7 +102,7 @@
           </p>
         </div>
       </section>
-      <section id="art_third">
+      <section id="art_third" class="horizontal-padding vertical-padding">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -73,15 +113,18 @@
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </section>
-      <section id="art_gallery">
+      <section id="art_gallery" class="horizontal-padding vertical-padding">
         <div class="art_img1">
           <img src="/images/art_first6.png" alt="" />
+          <div class="art_text">NIK VESTBERG</div>
         </div>
         <div class="art_img2">
           <img src="/images/art_third22.png" alt="" />
+          <div class="art_text">NIS</div>
         </div>
         <div class="art_img3">
           <img src="/images/art_second1.png" alt="" />
+          <div class="art_text">CARLOS MANNS</div>
         </div>
       </section>
     </main>
@@ -115,4 +158,5 @@
   </body>
   <script src="javascript/login.js"></script>
   <script src="javascript/kunst.js"></script>
+  <script src="landing.js"></script>
 </html>
