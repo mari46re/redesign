@@ -124,13 +124,15 @@ div[class^="art_img"]:hover .art_text {
     display: grid;
     text-align: center;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   #art_third p {
-    padding-right: 10rem;
+    padding-right: 5rem;
     padding-left: 10rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
   #art_gallery {
     display: flex;
@@ -143,12 +145,10 @@ div[class^="art_img"]:hover .art_text {
 
   .art_text1 p {
     padding-right: 5rem;
-    line-height: 2rem;
   }
 
   .art_text2 p {
     padding-left: 2rem;
-    line-height: 2rem;
   }
   /* 
   .img_art1 {
