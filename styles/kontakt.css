@@ -9,19 +9,16 @@ body {
 #aabningstider {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 250px 1fr 250px;
+  grid-template-rows: 150px 1fr 150px;
   place-items: center;
 }
 
 #uge_dage {
   grid-column: 2;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  flex-flow: column;
+  /* flex-flow: column; */
   grid-row: 2;
-
-  /*   
-  place-items: center; */
 }
 
 #uge_dage p {
@@ -173,168 +170,6 @@ form {
   font-family: tenso, sans-serif;
   font-weight: 500;
   font-style: normal; */
-  font-size: 2.2rem;
-  margin: 2rem;
-}
-
-#nyhedsbrev p {
-  color: #024a1d;
-  margin: 2rem;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ffffff;
-}
-/* Åbningstider i mobilfirst */
-#aabningstider {
-  display: flex;
-  place-content: center;
-}
-
-#aabningstider p {
-  color: #024a1d;
-  margin: 0%;
-}
-
-#aabningstiderh2 {
-  color: #024a1d;
-  font-family: tenso, sans-serif;
-  font-weight: 500;
-  /* font-style: medium; */
-  font-size: 2.2rem;
-  margin: 1rem;
-  padding-bottom: 1.5rem;
-  display: flex;
-  place-content: center;
-}
-
-/* Åbningstider slutter her i mobil first */
-@media (min-width: 720px) {
-  #aabningstider {
-    padding-bottom: 12rem;
-  }
-  #kontakt {
-    display: flex;
-    height: 100%;
-    width: 100%;
-  }
-  #kort_hen_til_kaffen {
-    width: 100%;
-    height: 100%;
-    /* display: grid; */
-    /* /* grid-template-columns: 1fr 1fr; */
-    padding: 1rem;
-    flex: 50%;
-  }
-  /* #kort_hen_til_kaffen,
-  iframe {
-    width: 800%;
-    height: auto;
-    align-items: stretch;
-  } */
-
-  #find_os_box {
-    padding: 6rem;
-    flex: 50%;
-    width: 100%;
-    height: 100%;
-  }
-
-  #nyhedsbrev {
-    display: grid;
-    grid-template-columns: 1fr 400px 1fr;
-    text-align: center;
-  }
-  #nyhedsbrevh2 {
-    margin: 0.2rem;
-  }
-
-  #send_et_nyhedsbrev {
-    grid-column: 2 /3;
-    place-content: center;
-  }
-  #navn_og_mail {
-    grid-column: 2 /3;
-    place-content: center;
-  }
-  form,
-  #indsendknap {
-    grid-column: 2 /3;
-  }
-}
-
-/* Her er koden for kortet */
-#kontakt {
-  background-color: #fdd0c3;
-  margin-top: 2rem;
-}
-
-#kort_hen_til_kaffen {
-  width: 100%;
-}
-
-#kort_hen_til_kaffen iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1;
-}
-
-iframe {
-  padding: 1rem;
-}
-
-#kontakt_h2 {
-  color: #024a1d;
-  font-family: tenso, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 2.2rem;
-  margin: 1.2rem;
-}
-
-#kontakt p {
-  margin-top: 0rem;
-  padding: 1rem;
-  color: #ffffff;
-}
-/* Her slutter koden for kortet */
-
-label,
-input,
-#knappen {
-  display: block;
-  margin: 0.4rem 0px;
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.3rem;
-  color: #024a1d;
-  border-radius: 7px;
-  box-shadow: 0%;
-  border-color: #024a1d;
-  width: 15rem;
-}
-
-form {
-  display: flex;
-  place-content: center;
-}
-
-#indsendknap {
-  display: flex;
-  place-content: center;
-  margin-bottom: 8rem;
-}
-
-#nyhedsbrevh2 {
-  color: #024a1d;
-  font-family: tenso, sans-serif;
-  font-weight: 500;
-  font-style: normal;
   font-size: 2.2rem;
   margin: 2rem;
 }
