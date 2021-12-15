@@ -1,5 +1,5 @@
 //Const til knap
-mybutton = document.getElementById("btn");
+const mybutton = document.getElementById("btn");
 
 // Når man scroller ned til 20px, fra toppen, dukker knap frem
 window.onscroll = function () {

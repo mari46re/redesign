@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/bmh3hjq.css" />
     <title>Vores Kaffebar</title>
   </head>
+
   <body>
     <header>
       <nav>
@@ -25,16 +26,16 @@
       </nav>
     </header>
     <main>
-      <div onclick="topFunction()" id="btn">
+      <button onclick="topFunction()" id="btn" style="display: none">
         <div class="front_btn">
           <img src="/images/btn_front.svg" alt="" />
         </div>
-      </div>
+      </button>
 
       <section id="art_first">
         <img src="images/art_first8.png" alt="" />
 
-        <div class="art_text1">
+        <div class="art_text1 horizontal-padding vertical-padding">
           <h2>Kunst</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,7 +51,7 @@
       <section id="art_second">
         <img src="/images/inside4.png" alt="" />
 
-        <div class="art_text2">
+        <div class="art_text2 horizontal-padding vertical-padding">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -62,7 +63,7 @@
           </p>
         </div>
       </section>
-      <section id="art_third">
+      <section id="art_third" class="horizontal-padding vertical-padding">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -73,15 +74,18 @@
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </section>
-      <section id="art_gallery">
+      <section id="art_gallery" class="horizontal-padding vertical-padding">
         <div class="art_img1">
           <img src="/images/art_first6.png" alt="" />
+          <div class="art_text">NIK VESTBERG</div>
         </div>
         <div class="art_img2">
           <img src="/images/art_third22.png" alt="" />
+          <div class="art_text">NIS</div>
         </div>
         <div class="art_img3">
           <img src="/images/art_second1.png" alt="" />
+          <div class="art_text">CARLOS MANNS</div>
         </div>
       </section>
     </main>
