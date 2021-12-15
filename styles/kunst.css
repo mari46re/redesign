@@ -10,7 +10,7 @@
   transition: 0.5s ease-in;
 }
 .art_img1:hover {
-  background-image: url(/kaffe.png);
+  background-image: url(/images/art_first7.png);
   background-size: cover;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .art_img2:hover {
-  background-image: url(/kaffe.png);
+  background-image: url(/images/art_third21.png);
   background-size: cover;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .art_img3:hover {
-  background-image: url(/kaffe.png);
+  background-image: url(/images/art_second2.png);
   background-size: cover;
 }
 
@@ -48,7 +48,7 @@
   #art_first {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: 80vh;
   }
 
   #art_first img {
@@ -68,7 +68,7 @@
   #art_second {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90vh;
+    grid-template-rows: 70vh;
     background-color: #fc7f00;
   }
 
@@ -93,16 +93,16 @@
   #art_third {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh;
+    grid-template-rows: 20vh;
     text-align: center;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 
   #art_gallery {
     display: flex;
     gap: 2rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }
