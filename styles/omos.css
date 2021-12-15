@@ -2,33 +2,61 @@ img {
   width: 100%;
 }
 
-#leftpic .leftpictekst {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
+@media (max-width: 720px) {
+  #leftpic .leftpictekst {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
-#leftpic img {
-  object-fit: cover;
-}
+  #omos .omostext {
+    padding-bottom: 2rem;
+  }
 
-video {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-}
+  #omos .omostext2 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
 
-video {
-  max-width: 100%;
-  padding-top: 50px;
-  padding-bottom: 30px;
-}
+  #omos .omostext2 p {
+    padding-top: 2rem;
+  }
 
-#video {
-  background-color: #024a1d;
-}
+  #omos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
 
-#video p {
-  color: white;
+  #omos img {
+    grid-row: 1;
+  }
+
+  #leftpic img {
+    object-fit: cover;
+  }
+
+  #leftpic h1 {
+    padding-bottom: 2rem;
+  }
+
+  video {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  video {
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  #video {
+    background-color: #024a1d;
+  }
+
+  #video p {
+    color: white;
+  }
 }
 
 @media (min-width: 720px) {
@@ -39,10 +67,19 @@ video {
 
   #omos img {
     display: grid;
+    object-fit: cover;
     grid-column: 2;
     width: 100%;
     height: 100%;
     padding-top: 6rem;
+  }
+
+  #video p {
+    color: white;
+  }
+
+  #video {
+    background-color: #024a1d;
   }
 
   #omos .omostext {
@@ -101,6 +138,7 @@ video {
     display: block;
     margin: 0 auto;
     width: 50%;
+    padding-top: 3rem;
   }
 
   #video .videotext {
@@ -142,5 +180,9 @@ video {
 
   #leftpic .leftpictekst p {
     grid-row: 2;
+  }
+
+  #leftpic .leftpictekst h1 {
+    padding-top: 4rem;
   }
 }
