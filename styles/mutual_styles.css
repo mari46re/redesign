@@ -298,7 +298,7 @@ header {
 }
 
 .front_btn:hover {
-  background-image: url(redesign\images\btn_back.svg);
+  background-image: url(redesign/images/btn_back.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
