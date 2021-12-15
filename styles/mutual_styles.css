@@ -276,10 +276,14 @@ header {
   cursor: pointer;
 }
 
+/* ------------------- TO TOP BUTTON ------------------ */
+
 .front_btn {
   position: fixed;
-  top: 81.5%;
-  left: 91.9%;
+  z-index: 999999;
+
+  bottom: 30px;
+  right: 30px;
 }
 
 #btn .front_btn img {
@@ -291,13 +295,15 @@ header {
 }
 
 .front_btn:hover {
-  background-image: url(/images/btn_back.svg);
+  background-image: url(redesign\images\btn_back.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .front_btn:hover img {
   opacity: 0%;
 }
+
+/* ------------------- TO TOP BUTTON SLUT ------------------ */
 
 /* ------------------- TO TOP BUTTON SLUT ------------------ */
 
