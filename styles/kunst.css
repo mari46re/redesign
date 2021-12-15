@@ -1,54 +1,74 @@
 #art_second {
   background-color: #fc7f00;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
 }
 
-.art_img1 img {
-  transition: 0.5s ease-in;
+#art_gallery img {
+  display: block;
 }
-.art_img1:hover {
-  background-image: url(/images/art_first7.png);
+
+.horizontal-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.vertical-padding {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+div[class^="art_img"] {
+  position: relative;
   background-size: cover;
 }
 
-.art_img1:hover img {
+/* https://stackoverflow.com/questions/5110249/wildcard-in-css-for-classes */
+div[class^="art_img"]:hover img {
+  transition: 500ms ease-in-out;
   opacity: 0;
   display: block;
   width: 100%;
+}
+
+.art_img1:hover {
+  background-image: url(/images/art_first7.png);
 }
 
 .art_img2:hover {
   background-image: url(/images/art_third21.png);
-  background-size: cover;
-}
-
-.art_img2:hover img {
-  opacity: 0;
-  display: block;
-  width: 100%;
-  transition: 0.5s ease-in-out;
 }
 
 .art_img3:hover {
   background-image: url(/images/art_second2.png);
-  background-size: cover;
 }
 
-.art_img3:hover img {
+.art_text {
   opacity: 0;
-  display: block;
+  position: absolute; /* https://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent */
+  top: 0;
+  left: 0;
   width: 100%;
-  transition: 0.5s ease-in-out;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  transition: opacity 500ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: large;
+}
+
+div[class^="art_img"]:hover .art_text {
+  opacity: 1;
 }
 
 @media (min-width: 720px) {
+  #art_first,
+  #art_second {
+    min-height: 600px;
+  }
   #art_first {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80vh;
   }
 
   #art_first img {
@@ -58,25 +78,25 @@
   }
 
   #art_first .art_text1 {
-    justify-content: center;
-    align-items: center;
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #art_second {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70vh;
     background-color: #fc7f00;
   }
 
   #art_second .art_text2 {
-    justify-content: center;
-    align-items: center;
+    padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #art_second .art_text2 p {
@@ -86,14 +106,16 @@
   #art_second img {
     order: +1;
     object-fit: cover;
-    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     height: 100%;
+    max-height: 600px;
   }
 
   #art_third {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh;
     text-align: center;
     justify-content: center;
     padding-top: 5rem;
@@ -105,6 +127,8 @@
     padding-bottom: 4rem;
     padding-right: 2rem;
     padding-left: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   /* 
   .img_art1 {
@@ -121,8 +145,10 @@
 
 .front_btn {
   position: fixed;
-  top: 81.5%;
-  left: 91.9%;
+  z-index: 999999;
+
+  bottom: 30px;
+  right: 30px;
 }
 
 #btn .front_btn img {
