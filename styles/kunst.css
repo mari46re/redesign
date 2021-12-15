@@ -28,6 +28,9 @@ div[class^="art_img"]:hover img {
   display: block;
   width: 100%;
 }
+.art_text1 h2 {
+  padding-bottom: 1rem;
+}
 
 .art_img1:hover {
   background-image: url(/images/art_first7.png);
@@ -55,6 +58,9 @@ div[class^="art_img"]:hover img {
   align-items: center;
   color: white;
   font-size: 2.5rem;
+  font-family: tenso, sans-serif;
+  font-weight: 700;
+  font-style: medium;
 }
 
 div[class^="art_img"]:hover .art_text {
@@ -121,6 +127,11 @@ div[class^="art_img"]:hover .art_text {
     padding-top: 5rem;
   }
 
+  #art_third p {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-bottom: 4rem;
+  }
   #art_gallery {
     display: flex;
     gap: 2rem;
@@ -128,7 +139,16 @@ div[class^="art_img"]:hover .art_text {
     padding-right: 2rem;
     padding-left: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
+  }
+
+  .art_text1 p {
+    padding-right: 5rem;
+    line-height: 2rem;
+  }
+
+  .art_text2 p {
+    padding-left: 2rem;
+    line-height: 2rem;
   }
   /* 
   .img_art1 {
