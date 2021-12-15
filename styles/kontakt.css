@@ -7,21 +7,39 @@ body {
 }
 /* Åbningstider i mobilfirst */
 #aabningstider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 1fr 150px;
+  place-items: center;
+}
+
+#uge_dage {
+  grid-column: 2;
   display: flex;
-  place-content: center;
+  justify-content: space-between;
+  flex-flow: column;
+  grid-row: 2;
+
+  /*   
+  place-items: center; */
+}
+
+#uge_dage p {
+  display: flex;
+  justify-content: space-between;
 }
 
 #aabningstider p {
   color: #024a1d;
-  margin: 0%;
+  margin-bottom: 1rem;
 }
 
 #aabningstiderh2 {
-  color: #024a1d;
+  /* color: #024a1d;
   font-family: tenso, sans-serif;
   font-weight: 500;
-  /* font-style: medium; */
-  font-size: 2.2rem;
+  font-style: medium;
+  font-size: 2.2rem; */
   margin: 1rem;
   padding-bottom: 1.5rem;
   display: flex;
@@ -31,7 +49,7 @@ body {
 /* Åbningstider slutter her i mobil first */
 @media (min-width: 720px) {
   #aabningstider {
-    padding-bottom: 12rem;
+    /* padding-bottom: 1rem; */
   }
   #kontakt {
     display: flex;
@@ -104,10 +122,10 @@ iframe {
 }
 
 #kontakt_h2 {
-  color: #024a1d;
+  /* color: #024a1d;
   font-family: tenso, sans-serif;
   font-weight: 500;
-  font-style: normal;
+  font-style: normal; */
   font-size: 2.2rem;
   margin: 1.2rem;
 }
@@ -116,6 +134,10 @@ iframe {
   margin-top: 0rem;
   padding: 1rem;
   color: #ffffff;
+}
+
+#find_os_box p {
+  color: #024a1d;
 }
 /* Her slutter koden for kortet */
 
@@ -147,10 +169,10 @@ form {
 }
 
 #nyhedsbrevh2 {
-  color: #024a1d;
+  /* color: #024a1d;
   font-family: tenso, sans-serif;
   font-weight: 500;
-  font-style: normal;
+  font-style: normal; */
   font-size: 2.2rem;
   margin: 2rem;
 }

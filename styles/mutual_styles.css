@@ -275,3 +275,28 @@ header {
   padding: 0.5rem;
   cursor: pointer;
 }
+
+.front_btn {
+  position: fixed;
+  top: 81.5%;
+  left: 91.9%;
+}
+
+#btn .front_btn img {
+  width: 3.5rem;
+}
+#btn img {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.43);
+  border-radius: 190px;
+}
+
+.front_btn:hover {
+  background-image: url(/images/btn_back.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.front_btn:hover img {
+  opacity: 0%;
+}
+
+/* ------------------- TO TOP BUTTON SLUT ------------------ */

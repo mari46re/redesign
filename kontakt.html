@@ -10,7 +10,34 @@
     <!-- Har sat linket til fonten ind her -->
     <link rel="stylesheet" href="https://use.typekit.net/bmh3hjq.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bmh3hjq.css" />
-    <title>Vores Kaffebar - kontakt</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Kontakt │ Vores Kaffebar</title>
   </head>
   <body>
     <header>
@@ -38,19 +65,25 @@
       </nav>
     </header>
     <main>
-      <h2 id="aabningstiderh2">Åbningstider</h2>
+      <div onclick="topFunction()" id="btn">
+        <div class="front_btn">
+          <img src="/images/btn_front.svg" alt="" />
+        </div>
+      </div>
+
       <section id="aabningstider">
         <div id="uge_dage">
-          <p>Mandag</p>
-          <p>Tirsdag</p>
-          <p>Onsdag</p>
-          <p>Torsdag</p>
-          <p>Fredag</p>
-          <p>Lørdag</p>
-          <p>Søndag</p>
+          <h2 id="aabningstiderh2">Åbningstider</h2>
+          <p>Mandag <span>7 - 18</span></p>
+          <p>Tirsdag <span>7 - 18</span></p>
+          <p>Onsdag <span>7 - 18</span></p>
+          <p>Torsdag <span>7 - 18</span></p>
+          <p>Fredag <span>7 - 18</span></p>
+          <p>Lørdag <span>9 - 18</span></p>
+          <p>Søndag <span>9 - 18</span></p>
         </div>
 
-        <div id="kl">
+        <!-- <div id="kl">
           <p>7 - 18</p>
           <p>7 - 18</p>
           <p>7 - 18</p>
@@ -58,7 +91,7 @@
           <p>7 - 18</p>
           <p>9 - 18</p>
           <p>9 - 18</p>
-        </div>
+        </div> -->
       </section>
 
       <section id="kontakt">
@@ -75,24 +108,32 @@
         <div id="find_os_box">
           <h2 id="kontakt_h2">Find os</h2>
           <p>
-            Vi befinder os på den skønne Holmbladsgade, og ligge nedlangs
-            Woltersgade. Vi er en en central Cafe som du kan benytte på du er på
-            vej til arbejde eller på vejen hjem fra en dejlig gå tur.
+            Vores Kaffebar er lokaliseret i på hjørnet af pulserende
+            Holmbladsgade og charmerende Woltersgade. <br />
+            Find os hele dagen, om end du er på farten eller har brug for et
+            sted at sidde. <br />
+            <br />
+            <br />
+            <span>Adressen er Holmbladsgade 50, 2300 København S.</span>
+            <br />
+            <br />
+            Vi glæder os til at se dig på Vores Kaffebar!
           </p>
         </div>
       </section>
 
       <section id="nyhedsbrev">
         <div id="send_et_nyhedsbrev">
-          <h2 id="nyhedsbrevh2">Nyhedsbrev</h2>
+          <h2 id="nyhedsbrevh2">Kontakt os</h2>
         </div>
         <div id="navn_og_mail">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            tempore voluptas autem at distinctio officia nobis <br />
-            aliquam odit dolorum animi, quos, necessitatibus <br />
-            reprehenderit iusto sed enim delectus earum dolore incidunt!
+            Vi foretrækker at være i kontakt med dig nede i caféen, <br />
+            men ellers må du gerne prøve at kontakte os på telefon eller mail
+            <br />
+            herunder:
           </p>
+          <p><a href="tel:+4530514041">+45 3051 4041</a></p>
         </div>
 
         <form action="Tak.html" name="kontakt" netlify>
@@ -154,4 +195,5 @@
   </body>
   <script src="javascript/login.js"></script>
   <script src="javascript/landing.js"></script>
+  <script src="kunst.js"></script>
 </html>
