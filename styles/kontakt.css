@@ -115,13 +115,13 @@ iframe {
 #kontakt p {
   margin-top: 0rem;
   padding: 1rem;
-  color: #024a1d;
+  color: #ffffff;
 }
 /* Her slutter koden for kortet */
 
 label,
 input,
-button {
+#knappen {
   display: block;
   margin: 0.4rem 0px;
   font-family: mr-eaves-modern, sans-serif;

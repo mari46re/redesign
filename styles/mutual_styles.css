@@ -1,9 +1,3 @@
-/* *Her er det defineret de forskellige fonte */
-/* !Her er det defineret de forskellige fonte */
-/* ^Her er det defineret de forskellige fonte */
-/* ?Her er det defineret de forskellige fonte */
-/* ~Her er det defineret de forskellige fonte */
-/* TODOHer er det defineret de forskellige fonte */
 html {
   scroll-behavior: smooth;
 }
@@ -148,3 +142,136 @@ footer .icon_foot .img_icon2 {
 }
 
 /* ------------------- FOOTER SLUT CSS -------------------- */
+
+/*-----------NAVIGATION------------*/
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.burger_container {
+  width: 100%;
+}
+
+.burger {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  /*gennemsigtig baggrund uden kant*/
+  background: transparent;
+  border: none;
+
+  /*ikonets præcise størrelse*/
+  aspect-ratio: 50/48;
+
+  /*musen bliver til en pegefinger når man kører den over ikonet*/
+  cursor: pointer;
+
+  z-index: 10;
+
+  position: fixed;
+}
+
+/*------Kode der bruges i javascript------*/
+.hide {
+  opacity: 0;
+}
+.logo {
+  display: block;
+  grid-column: 1;
+  aspect-ratio: 350/150;
+  width: 20vh;
+  padding-top: 2rem;
+  position: fixed;
+}
+/*--------------------------------------------*/
+
+@media (max-width: 720px) {
+  nav {
+    top: 0;
+    right: 0;
+    display: flex;
+    transition: 0.4s;
+    transform: translateX(100%);
+    justify-content: end;
+  }
+
+  nav.shown {
+    transform: none;
+  }
+  header nav ul {
+    /* position: sticky; */
+    list-style: none;
+    padding: 1rem;
+    z-index: 4;
+  }
+
+  li {
+    padding: 1rem;
+  }
+
+  ul.white {
+    background-color: white;
+    height: 100vh;
+    width: 40vh;
+    display: grid;
+    place-content: center;
+  }
+
+  .burger {
+    display: block;
+  }
+  .burger_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/*her har jeg slettet margin: 1rem;*/
+@media (min-width: 720px) {
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2;
+    padding: 1rem;
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: 2rem;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+}
+
+/* .logo {
+  display: block;
+  grid-column: 1;
+  aspect-ratio: 350/150;
+  width: 20vh;
+  padding-top: 2rem;
+  position: fixed;
+} */
+
+.indhold {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  display: block;
+  z-index: 1;
+}
+
+.logo a {
+  margin: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
