@@ -9,6 +9,14 @@
   left: 10%;
 }
 
+#splash_section p {
+  /* max-width: 45ch; */
+  text-shadow: 1px 1px #ffff;
+  /* color: #fc7f00; */
+  font-size: 1.5rem;
+  /* font-weight: 500; */
+  font-style: medium;
+}
 /*-----------NAVIGATION------------*/
 header {
   position: fixed;
@@ -33,7 +41,7 @@ header {
   /*musen bliver til en pegefinger når man kører den over ikonet*/
   cursor: pointer;
 
-  z-index: 1;
+  z-index: 10;
 
   position: fixed;
 }
@@ -59,7 +67,9 @@ header {
     display: flex;
     transition: 0.4s;
     transform: translateX(100%);
+    justify-content: end;
   }
+
   nav.shown {
     transform: none;
   }
@@ -130,6 +140,10 @@ header {
     display: block;
   }
 
+  /* h1 {
+    color: #fc7f00;
+  } */
+
   /*---------NAVIGATION SLUT-----------*/
 
   /*SPLASH-SEKTION I DESKTOP-VERSION*/
@@ -149,6 +163,7 @@ header {
   /* 45ch = kode for at sætningerne i p ikke bliver for lange */
   #splash_section p {
     max-width: 45ch;
+    /* color: #fc7f00; */
   }
 
   /*MENUEN I DESKTOP-VERSION*/
