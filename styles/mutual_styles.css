@@ -49,6 +49,309 @@ p {
 }
 
 img {
+  max-width: 100%;
+}
+
+a {
+  font-family: tenso, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
+  color: #024a1d;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #fc7f00;
+}
+
+/* ------------------- FOOTER START HER CSS ------------------ */
+footer {
+  background-color: #fdd0c3;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer p {
+  color: #024a1d;
+  margin: 0%;
+  padding: 0%;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  margin: 0%;
+  padding: 0%;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.kontakt_foot,
+.findos_foot,
+.aaben_foot {
+  margin-bottom: 2.5rem;
+}
+
+.icon_foot {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .icon_foot .img_icon1 {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+footer .icon_foot .img_icon2 {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+@media (min-width: 720px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+    text-align: left;
+    place-items: left;
+    padding-top: 3rem;
+    padding-left: 5rem;
+  }
+  footer a {
+    margin: 0%;
+    margin-left: 2rem;
+    padding: 0%;
+  }
+
+  footer .icon_foot {
+    grid-column: 6/7;
+  }
+
+  .kontakt_foot,
+  .findos_foot,
+  .aaben_foot {
+    margin-right: 2.5rem;
+  }
+}
+
+/* ------------------- FOOTER SLUT CSS -------------------- */
+
+/*-----------NAVIGATION------------*/
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.burger_container {
+  width: 100%;
+}
+
+.burger {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  /*gennemsigtig baggrund uden kant*/
+  background: transparent;
+  border: none;
+
+  /*ikonets præcise størrelse*/
+  aspect-ratio: 50/48;
+
+  /*musen bliver til en pegefinger når man kører den over ikonet*/
+  cursor: pointer;
+
+  z-index: 10;
+
+  position: fixed;
+}
+
+/*------Kode der bruges i javascript------*/
+.hide {
+  opacity: 0;
+}
+.logo {
+  display: block;
+  grid-column: 1;
+  aspect-ratio: 350/150;
+  width: 20vh;
+  padding-top: 2rem;
+  position: fixed;
+}
+/*--------------------------------------------*/
+
+@media (max-width: 720px) {
+  nav {
+    top: 0;
+    right: 0;
+    display: flex;
+    transition: 0.4s;
+    transform: translateX(100%);
+    justify-content: end;
+  }
+
+  nav.shown {
+    transform: none;
+  }
+  header nav ul {
+    /* position: sticky; */
+    list-style: none;
+    padding: 1rem;
+    z-index: 4;
+  }
+
+  li {
+    padding: 1rem;
+  }
+
+  ul.white {
+    background-color: white;
+    height: 100vh;
+    width: 40vh;
+    display: grid;
+    place-content: center;
+  }
+
+  .burger {
+    display: block;
+  }
+  .burger_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/*her har jeg slettet margin: 1rem;*/
+@media (min-width: 720px) {
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2;
+    padding: 1rem;
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: 2rem;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+}
+
+/* .logo {
+  display: block;
+  grid-column: 1;
+  aspect-ratio: 350/150;
+  width: 20vh;
+  padding-top: 2rem;
+  position: fixed;
+} */
+
+.indhold {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  display: block;
+  z-index: 1;
+}
+
+.logo a {
+  margin: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.front_btn {
+  position: fixed;
+  top: 81.5%;
+  left: 91.9%;
+}
+
+#btn .front_btn img {
+  width: 3.5rem;
+}
+#btn img {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.43);
+  border-radius: 190px;
+}
+
+.front_btn:hover {
+  background-image: url(/images/btn_back.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.front_btn:hover img {
+  opacity: 0%;
+}
+
+/* ------------------- TO TOP BUTTON SLUT ------------------ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: tenso, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
+  color: #024a1d;
+}
+
+h2 {
+  font-family: tenso, sans-serif;
+  font-weight: 700;
+  font-style: medium;
+  font-size: 2.2rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
+  color: #024a1d;
+}
+
+h3 {
+  font-family: tenso, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
+  color: #024a1d;
+}
+
+p {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  /* margin: 1rem;
+  padding: 0.5rem; */
+  color: #024a1d;
+}
+
+img {
   width: 100%;
 }
 
