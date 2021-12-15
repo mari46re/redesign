@@ -54,7 +54,7 @@ div[class^="art_img"]:hover img {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: large;
+  font-size: 2.5rem;
 }
 
 div[class^="art_img"]:hover .art_text {
